@@ -14,4 +14,6 @@ UPDATE users SET score = 100 WHERE name='John' OR name='Sally';
  SELECT name, age, birthday FROM users;
 CREATE TABLE users (name text, age smallint, birthday date);
 SELECT * FROM users JOIN login ON users.name = login.name;
-
+ DELETE FROM users WHERE name='John';
+ DROP TABLE users;
+ DROP TABLE login;
