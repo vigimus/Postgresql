@@ -13,3 +13,5 @@ UPDATE users SET score = 100 WHERE name='John' OR name='Sally';
  INSERT INTO users (name, age, birthday) VALUES ('John', 45, '1935-01-04'); 
  SELECT name, age, birthday FROM users;
 CREATE TABLE users (name text, age smallint, birthday date);
+SELECT * FROM users JOIN login ON users.name = login.name;
+
